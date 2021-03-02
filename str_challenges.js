@@ -198,5 +198,23 @@ function stringy(size) {
 
 /* ------------------------------- Reflection ------------------------------- */
 // ? This solution works, but what does it look like from a space and time standpoint? 
+// ? But what IS the space time complexity?? 
 //* We're creating a variable, an array, entering a for and nested if loop and adding to the array, and then mutating the array with .join
 
+function stringy(size) {
+  return ('1'.repeat(size)).replace(/11/g, '10');
+}
+
+// In this function I think the time complexity is 0(n), linear time - we create the string, and then use a regEx to replace consecutive 1's
+// searching a substring inside a string can be done in linear time using KMP algorithm which is the most efficient. Replacing in the worst case will take linear time as well.
+// the time depends on the length of the string - number of `size`
+
+/* -------------------------------------------------------------------------- */
+/*                             📝 Note on .replace                            */
+/*
+Basic syntax: string.replace(searchValue, newValue)
+Replace is a string method that searches a string for a certain value (or regEx) and returns a NEW STRING with searched for values replaced with the given newValue
+* .replace(/11/g, '10') - the first argument we give a regular expression, it searches for consecutive 1's globally (across the entire string)
+* second we replace those consecutive 1's with '10'
+*/
+/* -------------------------------------------------------------------------- */
