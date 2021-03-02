@@ -6,6 +6,8 @@ Often I will solve the questions using brute force, and then return to refine, r
 
 ## Table of Contents: 
 
+Challenges are *sort of* organized by their type. Sometimes it's hard to decide if a challenge is a number or an array challenge, etc. 
+
 #### JavaScript Challenges: 
 
 JS_challenges.js - Currently unorganized challenges, a grab bag

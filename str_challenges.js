@@ -5,7 +5,7 @@ This file contains the string-based code challenges I've solved. Pseudo-code is 
 */ 
 /* -------------------------------------------------------------------------- */
 
-// ❓ Reversed Words 
+//* ❓ Reversed Words 
 
 /* ------------------------------- description ------------------------------ */
 /*
@@ -53,7 +53,7 @@ function refactoredReversedWords(str){
     return str.split(" ").reverse().join(" "); 
 }
 
-// ❓ Reversed String 
+//* ❓ Reversed String 
 
 /* ------------------------------- description ------------------------------ */
 /* 
@@ -161,7 +161,7 @@ I provided the range paramater by using strNum.lenth - i - 1 - the result of tha
 */
 /* -------------------------------------------------------------------------- */
 
-// ❓ "Stringy"
+//* ❓ "Stringy"
 /* ------------------------------- description ------------------------------ */
 /* 
 write me a function stringy that takes a size and returns a string of alternating '1s' and '0s'.
