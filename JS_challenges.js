@@ -44,41 +44,7 @@ function switchcaseLikes(names) {
       case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'; break;
       default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
     }
-  }
-  
-
-
-
-// Function expanded form number 
-
-/* -------------------------------------------------------------------------- */
-/*                                 description                                */
-/* 
-You will be given a number and you will need to return it as a string in Expanded Form. For example:
-
-expandedForm(12); // Should return '10 + 2'
-expandedForm(42); // Should return '40 + 2'
-expandedForm(70304); // Should return '70000 + 300 + 4'
-*/
-/* -------------------------------------------------------------------------- */
-
-function expandedForm(num) {
-    // split numbers into string 
-    let number = String(num); 
-    // variable to hold the result 
-    let result = []; 
-    
-    // step through number string 
-    for (let i=0; i<number.length; i++){
-      // if the number is 0 
-      if (number[i] == 0) continue; 
-      // if its not 0... 
-      // push the number, and it's appropriate number of trailing 0's to indicate its mathematical place (10's, 100's, 1000's...)
-      else result.push(number[i] + "0".repeat(number.length -i -1))
-    }
-    // The numbers are pushed onto an ARRAY of whole numbers. Concantenate with a space + sign and another space:
-    return result.join(" + ")
-  }
+}
 
 // Highest scoring word 
 
