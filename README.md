@@ -8,13 +8,14 @@ Often I will solve the questions using brute force, and then return to refine, r
 
 1. JavaScript Challenges: 
 
-- JS_challenges.js - Currently unorganized challenges, a grab bag
-- str_challenges.js - String challenges - reverse string, sum string, shifted words, etc. 
+JS_challenges.js - Currently unorganized challenges, a grab bag
+🧵 str_challenges.js - String challenges - reverse string, sum string, shifted words, etc. 
+🔢 num_challenges.js - Number (Integer) challenges - sum the positives, reverse num, etc.
 
 
 2. Python Challenges: 
 
-- PY_challenges.py - Currently unorganized challenges, a grab bag
+PY_challenges.py - Currently unorganized challenges, a grab bag
 
 ## Installation: 
 
