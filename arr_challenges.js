@@ -81,11 +81,11 @@ var moveZeros = function (arr) {
   // step through array in a for loop 
   for (let i=0; i<arr.length; i++) {
     // ternary: is the current element 0? if it is, add it to zeroes, otherwise add it to others
-    arr[i] == 0 && typeof Number ? zeroes.push(arr[i]) : others.push(arr[i]); 
+    arr[i] === 0 && typeof Number ? zeroes.push(arr[i]) : others.push(arr[i]); 
   }
   
   // ! we have a problem - some tests are failing. This algorithm needs to solve for FALSE and empty objects or arrays
-  // test for 0 and typeof Number ? 
+  // * Silly me... all i had to do to solve my problem was do a deep comparison for 0 (both value AND type), voila, no more shifting of empty arrays or booleans
   
   
   // return the others array with the zeroes array glued to the end
