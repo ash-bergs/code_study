@@ -24,3 +24,14 @@ function findLongestWordLength(str) {
   }
   
   findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+//* SECOND ROUND 🥊🥊
+// Since we're splitting the str into an array of words (strings themselves), we can use an array function! 
+// Specifically .reduce 
+function refactoredLongestWordLength(str) {
+    const words = str.split(" "); 
+    words.reduce(function(longest, word) {
+        // for each word in the words array we return the greater of the two numbers (the length of the last longest word (longest) and the current element's length)
+        return Math.max(longest, word.length); 
+    }, 0); 
+}
