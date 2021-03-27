@@ -30,7 +30,7 @@ function findLongestWordLength(str) {
 // Specifically .reduce 
 function refactoredLongestWordLength(str) {
     const words = str.split(" "); 
-    words.reduce(function(longest, word) {
+    return words.reduce(function(longest, word) {
         // for each word in the words array we return the greater of the two numbers (the length of the last longest word (longest) and the current element's length)
         return Math.max(longest, word.length); 
     }, 0); 
