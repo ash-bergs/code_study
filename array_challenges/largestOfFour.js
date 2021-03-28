@@ -39,7 +39,7 @@ function largestOfFour(arr) {
     for (let i = 0; i < arr.length; i++) {
         // create a checker variable for comparison 
         // assign it to the first element of the sub-array as a default 
-        //! this removes the negative problems I was having in the function above 👆
+        //! this removes the negatives problems I was having in the function above 👆
       let largestNumber = arr[i][0];
       // begin the loop through subarray at arr[i]
       for (let j = 1; j < arr[i].length; j++) {
@@ -54,3 +54,19 @@ function largestOfFour(arr) {
     }
     return results;
   }
+
+//* SECOND ROUND PASS 🥊🥊 
+// 🌈array methods🌈
+// using for-loops is all well and fine... I guess 😛
+// But since we know that we're working with an *array* of *arrays* - we know we can use array methods to help out 
+// We'll use .map, which effectively makes a copy (does not mutate the original array, returns a new array), and for each element of the array, we can perform an action
+// that action is performed using .reduce, to return a single value for each sub-array
+
+function arrMethodLargestOfFour(arr) {
+    return arr.map((subArray) => {
+        return subArray.reduce((prev, current) => {
+            return current > prev ? current : prev;
+        })
+
+    })
+}
