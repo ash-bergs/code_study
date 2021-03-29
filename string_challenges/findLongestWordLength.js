@@ -60,6 +60,7 @@ function longestWorthLengthRecursive(str) {
     // if words has multiple words ... 
     // remove the first element of words and recursively call the function
     // slowly removing words one by one from the beginning and perpetually returning the max length
+    //! I have to remember this isn't completing and updating/resolving to one value every time i.e. things stack up, they're not done sequentially
     return Math.max(
         words[0].length, 
         longestWorthLengthRecursive(words.slice(1).join(" "))); 
