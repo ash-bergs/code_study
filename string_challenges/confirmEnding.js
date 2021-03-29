@@ -18,6 +18,7 @@ function confirmEnding(str, target) {
     const strSlice = str.substring(str.length - targetLength)
   
     // if the target and slice of str match, return true, else false
+    //? what difference does using == over === have here? is looking for deep equality more "costly"? or should I be checking for deep comparison instead? 
     return strSlice == target ? true : false;
   }
   
@@ -26,8 +27,8 @@ confirmEnding("Bastian", "n");
 
 //* SECOND ROUND 🥊🥊
 // This is the same answer as above, just more succinct, and without creating variables 
-// direct return 
+// direct return - declarative approach 
 
 function oneLineConfirmEnding(str, target) {
-    return str.substring(str.length - target.length) == target ? true : false; 
+    return str.substring(str.length - target.length) === target; 
 }
