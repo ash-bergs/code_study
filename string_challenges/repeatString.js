@@ -19,3 +19,10 @@ function repeatStringNumTimes(str, num) {
     }
     return finalStr; 
 }
+
+//* SECOND ROUND 🥊🥊 
+// Back to this problem, this time with our old friend 🌈recursion🌈
+function recursiveRepeatStringNumTimes(str, num) {
+    return num > 0 ? str + recursiveRepeatStringNumTimes(str, num - 1) : ""; 
+}
+
