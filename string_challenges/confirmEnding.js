@@ -32,3 +32,16 @@ confirmEnding("Bastian", "n");
 function oneLineConfirmEnding(str, target) {
     return str.substring(str.length - target.length) === target; 
 }
+
+//* THIRD ROUND 🥊🥊🥊
+// Since we're working with strings, we can't forget about 🌈regular expressions🌈
+
+function regExConfirmEnding(str, target) {
+  // first define the pattern, using target and the regex constructor 
+  let pattern = new RegExp(target, "$", "i"); 
+  // We used the RegExp constructor here since the target is dynamic (changes with each function call, in theory)
+  // $ anchor tag - searching for whatever we call this patten on to END with target 
+  // i insensitive - case won't matter 
+  return pattern.test(str); 
+  // calling test will return true if the pattern is found at the end of str, otherwise will return false
+}

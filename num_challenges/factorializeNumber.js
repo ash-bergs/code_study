@@ -38,7 +38,7 @@ function refactoredFactorialize(num) {
     return product;
   }
 
-//* THIRD ROUND SOLUTION 🥊🥊
+//* THIRD ROUND SOLUTION 🥊🥊🥊
 // This time with 🌈recursion🌈
 // This kind of challenge is a great chance to use recursion 
 function factorializeNumRecursive(num) {
