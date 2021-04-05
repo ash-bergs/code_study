@@ -22,5 +22,13 @@ function titleCase(str) {
     
     // join the array of capitalized words 
     return cappedWords.join(" ");
-  }
-  
+}
+
+//* SECOND ROUND 🥊🥊
+// I can make the above answer more succinct ... but arguably harder to read 👓👓
+
+function editedTitleCase(str) {
+    return str.toLowerCase().spit(' ').map(word => {
+        return (word.charAt(0).toUpperCase() + word.slice(1));
+    }).join(' '); 
+}
