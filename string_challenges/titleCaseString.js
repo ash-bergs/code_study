@@ -32,3 +32,30 @@ function editedTitleCase(str) {
         return (word.charAt(0).toUpperCase() + word.slice(1));
     }).join(' '); 
 }
+
+//* THIRD ROUND 🥊🥊🥊
+// Now with 🌈regular expressions🌈 and the string method 🌈replace🌈
+
+/* -------------------------------------------------------------------------- */
+/*                               About .replace                               */
+/*
+    The replace method returns a NEW STRING with some, or all, matches of a given pattern (parameter) replaced by a given replacement (second parameter). 
+    * The pattern can be a string or a RegExp 
+    ! If the pattern is a string only the FIRST occurence will be replaced
+    * The replacement can be a string or a function (to be called for each match)
+
+*/
+/* -------------------------------------------------------------------------- */
+
+
+function regExpTitleCase(str) {
+    return str.toLowerCase().replace(/(^|\s)\S/g, letter => letter.toUpperCase());
+    // About the RegExp (the PATTERN argument)
+    // () -> creates the CAPTURE GROUP 
+    // * ^|\s -> the first character (^) OR (|) first character after whitespace (\s)
+    // \S -> matches any character the is no whitespace 
+    // /g -> global tag, searches the whole string
+    // * the REPLACEMENT argument is a function, converting the matching characters to capital letters
+    // letter => letter.toUpperCase()
+}
+
