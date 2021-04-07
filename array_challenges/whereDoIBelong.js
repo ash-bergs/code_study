@@ -25,3 +25,5 @@ function whereDoIBelong(arr, num) {
     // once we hit a greater number i stops incrementing and the while loop ends, giving us our index
     return i;
 }
+
+// test
