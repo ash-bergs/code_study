@@ -31,3 +31,13 @@ function enough(cap, on, wait) {
         return wait - (cap - on)
     }
 }
+
+//* SECOND ROUND 🥊🥊
+//* This time using the 🌈Math libaray (Math API)🌈 
+
+function mathEnough(cap, on, wait) {
+    return Math.max(wait + on - cap, 0); 
+    //! Math.max will return the higher number of the two arguments - wait + on - cap OR 0
+    // So if the number of people waiting, plus the number of people on, minus the cap is a NON NEGATIVE NUMBER, then the cap was greater than the sum of those two, and people will have to wait 
+    // otherwise it was a NEGATIVE number (there were seats remaining), but in that case we just return 0
+}
