@@ -28,3 +28,24 @@ Right now there's nothing to install. I might add nodemon to the project to run 
 #### **Suggested VS Code extensions:**
 
 I use the Better COmments extension from AmirH.A. to help color code my comments. If you have that installed you'll notice a visual organization to my comments in this repo. 
+
+----
+
+## Notes
+
+Using a tablet display I often take notes on subjects I don't readily know about. Navigate through those here. 
+
+----
+
+### Table of Contents:
+
+<a href="#arrayMethods">Array Methods</a> 
+
+<div id="arrayMethods"></div>
+
+#### Array Methods: 
+
+❔ Slice vs. Splice 
+
+![slice vs splice notes](https://i.ibb.co/5LTjqRJ/notes-Slice-Splice.png)
+
