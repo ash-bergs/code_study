@@ -38,6 +38,9 @@ function enough(cap, on, wait) {
 function mathEnough(cap, on, wait) {
     return Math.max(wait + on - cap, 0); 
     //! Math.max will return the higher number of the two arguments - wait + on - cap OR 0
-    // So if the number of people waiting, plus the number of people on, minus the cap is a NON NEGATIVE NUMBER, then the cap was greater than the sum of those two, and people will have to wait 
-    // otherwise it was a NEGATIVE number (there were seats remaining), but in that case we just return 0
+    //* If the number of people WAITING added to the number of people already ON minus the CAPACITY is a negative number - that means there were seats left unfilled 
+    // if 3 people are waiting, and 2 people are on, and the capacity is 10 --> 3 + 2 = 5 --> 5 - 10 = -5 <-- 5 seats left unfilled. 
+    // whereas is 10 people are waiting, 6 people are on, and the capacity is still 10 --> 10 + 6 = 16 --> 16 - 10 = 6 <-- 6 people will be left waiting for the next bus 
+    // if the number is negative (there are seats remaining), we don't care how many seats are remaining, just that no one has to wait - return 0 
+    // otherwise the number of passengers waiting will be higher of the two arguments, and will return 
 }
