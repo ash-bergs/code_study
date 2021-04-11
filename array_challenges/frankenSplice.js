@@ -30,3 +30,15 @@ function frankenSplice(arr1, arr2, n) {
     // once all elements of arr1 have been iterated over, the localArr will be updated 
     return localArr; 
 }
+
+//* SECOND ROUND 🥊🥊 
+// Since we're just pushing the first array into the second, we can achieve the same result as above, without a traditional for loop 
+// using ES6 🌈spread syntax🌈
+
+function simpleFrankenSplice(arr1, arr2, n) {
+    // take a copy of the second arr2 (what's being added to)
+    const localArr = arr2.slice(); 
+    // spread syntax adds all the elements of the first arr in order 
+    localArr.splice(n, 0, ...arr2); 
+    return localArr; 
+}
