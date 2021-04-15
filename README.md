@@ -41,6 +41,8 @@ Using a tablet display I often take notes on subjects I don't readily know about
 
 <a href="#arrayMethods">Array Methods</a> 
 
+<a href="#stringMethods">String Methods</a> 
+
 <div id="arrayMethods"></div>
 
 #### Array Methods: 
@@ -49,3 +51,9 @@ Using a tablet display I often take notes on subjects I don't readily know about
 
 ![slice vs splice notes](https://i.ibb.co/5LTjqRJ/notes-Slice-Splice.png)
 
+
+<div id="stringMethods"></div>
+
+#### String Methods: 
+
+![string.prototype.substr](https://i.ibb.co/HqXzzzS/substr-Method-Notes.png)
