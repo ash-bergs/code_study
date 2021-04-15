@@ -47,7 +47,7 @@ Using a tablet display I often take notes on subjects I don't readily know about
 
 #### Array Methods: 
 
-❔ Slice vs. Splice 
+📓 Slice vs. Splice: 
 
 ![slice vs splice notes](https://i.ibb.co/5LTjqRJ/notes-Slice-Splice.png)
 
@@ -55,5 +55,7 @@ Using a tablet display I often take notes on subjects I don't readily know about
 <div id="stringMethods"></div>
 
 #### String Methods: 
+
+📓 `String.prototype.substr()`: 
 
 ![string.prototype.substr](https://i.ibb.co/HqXzzzS/substr-Method-Notes.png)
