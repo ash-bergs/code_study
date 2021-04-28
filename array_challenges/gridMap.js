@@ -35,13 +35,28 @@ function gridMap(fn, a) {
         // temp variable performs the function on each element of a sub array
         let temp = fn(a[i][j]);
         // pushing the results for each
-        result.push(temp)
+        result.push(temp); 
       }
       // at the end of a sub-array push the results to the return array
-      arr.push(result)
+      arr.push(result); 
       // and clear the result variable
-      result = []
+      result = []; 
     }
     
     return arr;
-  }
+}
+
+//* SECOND ROUND 🥊🥊 
+// Using 🌈array.prototype.map🌈
+
+function gridMap(fn, a) {
+    return a.map(subarr => {
+      return subarr.map(fn); 
+    }); 
+}
+
+//* Direct return 
+
+function shortGridMap(fn, a) {
+    return a.map(subarr=>subarr.map(fn)); 
+}
