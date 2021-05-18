@@ -37,3 +37,14 @@ function duplicateCount(text){
     }
     return count;
 }
+
+//* SECOND ROUND 🥊🥊
+// This time using 🌈Regular Expressions🌈 and the 🌈String.prototype.match🌈 method 
+
+function duplicateCount(text) {
+  const sortedText = text.toLowerCase().split("").sort().join(""); 
+  const pattern = /([^])\1+/g; 
+  const matches = sortedText.match(pattern); 
+
+  return matches ? matches.length : 0; 
+}
