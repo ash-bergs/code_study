@@ -58,4 +58,8 @@ Using a tablet display I often take notes on subjects I don't readily know about
 
 📓 `String.prototype.substr()`: 
 
-![string.prototype.substr](https://i.ibb.co/HqXzzzS/substr-Method-Notes.png)
+![string.prototype.substr notes](https://i.ibb.co/HqXzzzS/substr-Method-Notes.png)
+
+📓 `String.prototype.match()`: 
+
+![string.prototype.match notes](https://i.ibb.co/z5jBTvH/count-Duplicatessecond.png)
