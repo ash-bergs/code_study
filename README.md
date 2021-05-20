@@ -2,11 +2,13 @@
 
 Code challenges... who doesn't love them? This is a collection of the code challenges I've solved for, mostly in Python and JavaScript. In each challenge I try to provide pseudo-code and explanations of what's going on and why. 
 
-Often I will solve the questions using brute force, and then return to refine, refactor and improve the code later - if I can 💪 
+Often I will solve the questions using brute force, and then return to refine, refactor and improve the code later. Often this requires some Googling, cracking a textbook, or spending time noodling on the problem with a pen and paper. 
 
 ## Table of Contents: 
 
 Challenges are *sort of* organized by their type. Sometimes it's hard to decide if a challenge is a number or an array challenge, etc. 
+
+<a href="#notes">My Notes</a>
 
 #### JavaScript Challenges: 
 
@@ -23,7 +25,7 @@ PY_challenges.py - Currently unorganized challenges, a grab bag
 
 #### Installation: 
 
-Right now there's nothing to install. I might add nodemon to the project to run JS code in the future. 
+Right now there's nothing to install. I might add nodemon or Jest to the project to run JS code in the future. 
 
 #### **Suggested VS Code extensions:**
 
@@ -31,17 +33,21 @@ I use the Better COmments extension from AmirH.A. to help color code my comments
 
 ----
 
+<div id="notes"></div>
+
 ## Notes
 
-Using a tablet display I often take notes on subjects I don't readily know about. Navigate through those here. 
+The act of taking notes with a pen helps me learn, and pushes me to reword things I'm learning on the fly. Navigate through some of the notes I've taken while solving various code challenges here. 
 
 ----
 
 ### Table of Contents:
 
-<a href="#arrayMethods">Array Methods</a> 
+<a href="#arrayMethods">Arrays</a> 
 
-<a href="#stringMethods">String Methods</a> 
+<a href="#objectsNotes">Objects</a>
+
+<a href="#stringMethods">Strings</a> 
 
 <div id="arrayMethods"></div>
 
@@ -63,6 +69,8 @@ Using a tablet display I often take notes on subjects I don't readily know about
 📓 `String.prototype.match()`: 
 
 ![string.prototype.match notes](https://i.ibb.co/z5jBTvH/count-Duplicatessecond.png)
+
+<div id="objectsNotes"></div>
 
 #### Object Methods: 
 
