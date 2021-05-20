@@ -29,7 +29,7 @@ Right now there's nothing to install. I might add nodemon or Jest to the project
 
 #### **Suggested VS Code extensions:**
 
-I use the Better COmments extension from AmirH.A. to help color code my comments. If you have that installed you'll notice a visual organization to my comments in this repo. 
+I use the Better Comments extension from AmirH.A. to help color code my comments. If you have that installed you'll notice a visual organization to my comments in this repo. 
 
 ----
 
@@ -37,13 +37,15 @@ I use the Better COmments extension from AmirH.A. to help color code my comments
 
 ## Notes
 
-The act of taking notes with a pen helps me learn, and pushes me to reword things I'm learning on the fly. Navigate through some of the notes I've taken while solving various code challenges here. 
+The act of taking notes with a pen helps me learn, and pushes me to re-word points on the fly. Navigate through some of the notes I've taken while solving various code challenges here. 
 
 ----
 
 ### Table of Contents:
 
 <a href="#arrayMethods">Arrays</a> 
+
+<a href="#controlStatements">Control Statements</a>
 
 <a href="#objectsNotes">Objects</a>
 
@@ -57,6 +59,27 @@ The act of taking notes with a pen helps me learn, and pushes me to reword thing
 
 ![slice vs splice notes](https://i.ibb.co/5LTjqRJ/notes-Slice-Splice.png)
 
+----
+
+<div id="controlStatements></div>
+
+#### Control Statements: 
+
+📓 For-Of Loop: 
+
+![for-of loop notes](https://i.ibb.co/j8f2xpY/for-Of-Loop-Notes.png)
+
+----
+
+<div id="objectsNotes"></div>
+
+#### Object Methods: 
+
+📓 `Object.assign()`:
+
+![object.assign notes](https://i.ibb.co/jJmtx9T/object-Assign.png)
+
+----
 
 <div id="stringMethods"></div>
 
@@ -70,10 +93,4 @@ The act of taking notes with a pen helps me learn, and pushes me to reword thing
 
 ![string.prototype.match notes](https://i.ibb.co/z5jBTvH/count-Duplicatessecond.png)
 
-<div id="objectsNotes"></div>
-
-#### Object Methods: 
-
-📓 `Object.assign()`:
-
-![object.assign notes](https://i.ibb.co/jJmtx9T/object-Assign.png)
+----
