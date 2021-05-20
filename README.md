@@ -63,3 +63,9 @@ Using a tablet display I often take notes on subjects I don't readily know about
 📓 `String.prototype.match()`: 
 
 ![string.prototype.match notes](https://i.ibb.co/z5jBTvH/count-Duplicatessecond.png)
+
+#### Object Methods: 
+
+📓 `Object.assign()`:
+
+![object.assign notes](https://i.ibb.co/jJmtx9T/object-Assign.png)
