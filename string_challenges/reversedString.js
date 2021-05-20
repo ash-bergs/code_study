@@ -35,7 +35,7 @@ function reverse(str) {
 
 //* The Coding Interview Bootcamp Solution (#2)
 // The answer above works, but using a traditional for loop introduces a lot of room for errors & typos 
-// Instead we can use another //* ES6 feature: For-of Loops: *// 
+// Instead we can use another //* ES6 feature: For-of Loops *// 
 
 function reversedString(str) {
     let newStr = ""; 
@@ -45,4 +45,11 @@ function reversedString(str) {
     }
 
     return newStr; 
+}
+
+//* The Coding Interview Bootcamp Solution (#3)
+// Using the 🌈array.prototype.reduce🌈 helper/method/higher order function
+
+function reverseString(str) {
+    return str.reduce((reversed, char) => char + reversed, ""); 
 }
