@@ -51,5 +51,5 @@ function reversedString(str) {
 // Using the 🌈array.prototype.reduce🌈 helper/method/higher order function
 
 function reverseString(str) {
-    return str.reduce((reversed, char) => char + reversed, ""); 
+    return str.split("").reduce((reversed, char) => char + reversed, ""); 
 }
