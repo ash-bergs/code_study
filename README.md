@@ -2,7 +2,7 @@
 
 Code challenges... who doesn't love them? This is a collection of the code challenges I've solved for, mostly in Python and JavaScript. In each challenge I try to provide pseudo-code and explanations of what's going on and why. 
 
-Often I will solve the questions using brute force, and then return to refine, refactor and improve the code later. Often this requires some Googling, cracking a textbook, or spending time noodling on the problem with a pen and paper. 
+Often I will solve the questions using brute force, and then return to refine, refactor and improve the code later. This requires some Googling, cracking a textbook, or spending time noodling on the problem with a pen and paper. 
 
 ## Table of Contents: 
 
