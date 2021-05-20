@@ -82,4 +82,23 @@ function orderFood(list) {
     });
     
     return meals;
-}
+  }
+
+//* Using 🌈array.prototype.reduce🌈
+
+function orderFood(list) {
+    // reduce: executes a reducer function (that we provide) on each element of the array
+    // returns a single output value
+    
+    return list.reduce( (meals, dev) => {
+      // reduce takes in an accumulator -> meals, an object -> the singular output value
+      // and current value -> dev -> the currently processed element 
+      // reduce can also optionally accept two more arguments - a current index, and a source array, but we don't need them in this instance
+      
+      // the returning object will be checked for the meal type
+      // and if it exists it'll be incremented by 1, otherwise init'd to 1 
+      meals[dev.meal] = (meals[dev.meal] + 1) || 1;
+      return meals;
+    }, {});
+  }
+
