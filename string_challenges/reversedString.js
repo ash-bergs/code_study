@@ -32,3 +32,17 @@ function reverse(str) {
 
     return reversedStr; 
 }
+
+//* The Coding Interview Bootcamp Solution (#2)
+// The answer above works, but using a traditional for loop introduces a lot of room for errors & typos 
+// Instead we can use another //* ES6 feature: For-of Loops: *// 
+
+function reversedString(str) {
+    let newStr = ""; 
+
+    for (let letter of str) {
+        newStr = letter + newStr; 
+    }
+
+    return newStr; 
+}
