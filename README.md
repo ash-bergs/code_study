@@ -79,6 +79,10 @@ The act of taking notes with a pen helps me learn, and pushes me to re-word poin
 
 ![object.assign notes](https://i.ibb.co/jJmtx9T/object-Assign.png)
 
+🧠 Making a `Map` from a `String`: 
+
+![character map notes](https://i.ibb.co/bPQD6Df/character-Map-Notes.png)
+
 ----
 
 <div id="stringMethods"></div>
