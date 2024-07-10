@@ -45,36 +45,73 @@ function readLine() {
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
+/* ------------------------------ FIRST ATTEMPT ----------------------------- */
+/**
+ * Brute force - using a for-loop and some variable buckets to keep track of things
+ * Gets the job done, but could be better....
+ * However recursion isn't really useful in this counting problem (lots of overhead fn calls)
+ */
+// 0(n) - but that's the best we can achieve in a problem where we need to look at each element in an array at least once
+// function plusMinus(arr) {
+//   // basically, the crux of the problem here is:
+//   // Given an array of 'n' numbers
+//   // determine the ratio of numbers from the array that are positive, negative, or 0
+//   // and return in specified output, with 6 decimal places
+
+//   // buckets to keep count
+//   // initializing these is constant time - 0(1)
+//   const n = arr.length;
+//   let positiveCount = 0;
+//   let negativeCount = 0;
+//   let zeroCount = 0;
+
+//   // loop through the array - linear operation - 0(n)
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 0) zeroCount += 1;
+//     if (arr[i] > 0) positiveCount += 1;
+//     if (arr[i] < 0) negativeCount += 1;
+//   }
+
+//   // print each ratio
+//   // log statements constant? 0(1)?
+//   console.log((positiveCount / n).toFixed(6));
+//   console.log((negativeCount / n).toFixed(6));
+//   console.log((zeroCount / n).toFixed(6));
+// }
+
+/* ---------------------------- END FIRST ATTEMPT --------------------------- */
+
+/* ----------------------------- SECOND ATTEMPT ----------------------------- */
+/**
+ * Went with a more "es6-y" approach here
+ * Since we can't really improve the time complexity, we can make it more modern and readable
+ * Uses forEach method, and utilizes objects over number variables
+ */
 function plusMinus(arr) {
-  // basically, the crux of the problem here is:
-  // Given an array of 'n' numbers
-  // determine the ratio of numbers from the array that are positive, negative, or 0
-  // and return in specified output, with 6 decimal places
   const n = arr.length;
-
-  const getRatios = (arr, n) => {
-    // buckets to keep count
-    let positiveCount = 0;
-    let negativeCount = 0;
-    let zeroCount = 0;
-    // loop through the array
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === 0) zeroCount += 1;
-      if (arr[i] > 0) positiveCount += 1;
-      if (arr[i] < 0) negativeCount += 1;
-    }
-
-    // we can get the ratios with the total length n
-    return console.log(`
-    ${(positiveCount / n).toFixed(6)}
-    ${(negativeCount / n).toFixed(6)}
-    ${(zeroCount / n).toFixed(6)}
-    `);
+  // use an object to track counters
+  const counts = {
+    positive: 0,
+    negative: 0,
+    zero: 0,
   };
 
-  return getRatios(arr, n);
+  // forEach instead of a for-loop
+  arr.forEach((number) => {
+    if (number > 0) counts.positive += 1;
+    if (number < 0) counts.negative += 1;
+    counts.zero += 1;
+  });
+
+  // destructure counts for return
+  const { positive, negative, zero } = counts;
+
+  console.log((positive / n).toFixed(6));
+  console.log((negative / n).toFixed(6));
+  console.log((zero / n).toFixed(6));
 }
 
+/* --------------------------- END SECOND ATTEMPT --------------------------- */
 function main() {
   const n = parseInt(readLine().trim(), 10);
 
