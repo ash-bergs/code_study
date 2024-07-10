@@ -43,6 +43,11 @@ function readLine() {
  * Complete the 'plusMinus' function below.
  *
  * The function accepts INTEGER_ARRAY arr as parameter.
+ * 
+ * Basically, the crux of the problem here is:
+  Given an array of 'n' numbers
+  determine the ratio of numbers from the array that are positive, negative, or 0
+  and return in specified output, with 6 decimal places
  */
 
 /* ------------------------------ FIRST ATTEMPT ----------------------------- */
@@ -53,10 +58,6 @@ function readLine() {
  */
 // 0(n) - but that's the best we can achieve in a problem where we need to look at each element in an array at least once
 // function plusMinus(arr) {
-//   // basically, the crux of the problem here is:
-//   // Given an array of 'n' numbers
-//   // determine the ratio of numbers from the array that are positive, negative, or 0
-//   // and return in specified output, with 6 decimal places
 
 //   // buckets to keep count
 //   // initializing these is constant time - 0(1)
@@ -86,6 +87,9 @@ function readLine() {
  * Went with a more "es6-y" approach here
  * Since we can't really improve the time complexity, we can make it more modern and readable
  * Uses forEach method, and utilizes objects over number variables
+ *
+ * Note: this isn't faster than the first attempt!
+ * A regular ol' for-loop has less function call overhead and will be preferred in performance-sensitive operations
  */
 function plusMinus(arr) {
   const n = arr.length;
