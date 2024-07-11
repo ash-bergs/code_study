@@ -12,4 +12,4 @@ If the code challenge is part of a set or course, they're organized by that stru
 
 ## Courses
 
-# Hacker Rank - [1 Week Interview Prep Course](https://www.hackerrank.com/interview/preparation-kits/one-week-preparation-kit/one-week-day-one/challenges)
+### Hacker Rank - [1 Week Interview Prep Course](https://www.hackerrank.com/interview/preparation-kits/one-week-preparation-kit/one-week-day-one/challenges)

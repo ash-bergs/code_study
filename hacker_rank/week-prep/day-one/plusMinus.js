@@ -57,28 +57,27 @@ function readLine() {
  * However recursion isn't really useful in this counting problem (lots of overhead fn calls)
  */
 // 0(n) - but that's the best we can achieve in a problem where we need to look at each element in an array at least once
-// function plusMinus(arr) {
+function plusMinus(arr) {
+  // buckets to keep count
+  // initializing these is constant time - 0(1)
+  const n = arr.length;
+  let positiveCount = 0;
+  let negativeCount = 0;
+  let zeroCount = 0;
 
-//   // buckets to keep count
-//   // initializing these is constant time - 0(1)
-//   const n = arr.length;
-//   let positiveCount = 0;
-//   let negativeCount = 0;
-//   let zeroCount = 0;
+  // loop through the array - linear operation - 0(n)
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) zeroCount += 1;
+    if (arr[i] > 0) positiveCount += 1;
+    if (arr[i] < 0) negativeCount += 1;
+  }
 
-//   // loop through the array - linear operation - 0(n)
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] === 0) zeroCount += 1;
-//     if (arr[i] > 0) positiveCount += 1;
-//     if (arr[i] < 0) negativeCount += 1;
-//   }
-
-//   // print each ratio
-//   // log statements constant? 0(1)?
-//   console.log((positiveCount / n).toFixed(6));
-//   console.log((negativeCount / n).toFixed(6));
-//   console.log((zeroCount / n).toFixed(6));
-// }
+  // print each ratio
+  // log statements constant? 0(1)?
+  console.log((positiveCount / n).toFixed(6));
+  console.log((negativeCount / n).toFixed(6));
+  console.log((zeroCount / n).toFixed(6));
+}
 
 /* ---------------------------- END FIRST ATTEMPT --------------------------- */
 
