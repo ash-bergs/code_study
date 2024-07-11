@@ -1,100 +1,15 @@
-# Personal Code_Study Journal of Ash Bergsma 
+# Code Study
 
-Code challenges... who doesn't love them? This is a collection of the code challenges I've solved for, mostly in Python and JavaScript. In each challenge I try to provide pseudo-code and explanations of what's going on and why. 
+This collection showcases various code challenges I've tackled, along with refactors I've made to improve and better understand the solutions.
 
-Often I will solve the questions using brute force, and then return to refine, refactor and improve the code later. This requires some Googling, cracking a textbook, or spending time noodling on the problem with a pen and paper. 
+This repository serves as both a personal learning tool and a resource for others looking to see different approaches to common coding problems.
 
-## Table of Contents: 
+## Introduction
 
-Challenges are *sort of* organized by their type. Sometimes it's hard to decide if a challenge is a number or an array challenge, etc. 
+The challenges are loosely organized by over-arching type - but also by their language.
 
-<a href="#notes">My Notes</a>
+If the code challenge is part of a set or course, they're organized by that structure.
 
-#### JavaScript Challenges: 
+## Courses
 
-JS_challenges.js - Currently unorganized challenges, a grab bag
-
-🧵 str_challenges.js - String challenges - reverse string, sum string, shifted words, etc. 
-
-🔢 num_challenges.js - Number (Integer) challenges - sum the positives, reverse num, etc.
-
-
-#### Python Challenges: 
-
-PY_challenges.py - Currently unorganized challenges, a grab bag
-
-#### Installation: 
-
-Right now there's nothing to install. I might add nodemon or Jest to the project to run JS code in the future. 
-
-#### **Suggested VS Code extensions:**
-
-I use the Better Comments extension from AmirH.A. to help color code my comments. If you have that installed you'll notice a visual organization to my comments in this repo. 
-
-----
-
-<div id="notes"></div>
-
-## Notes
-
-The act of taking notes with a pen helps me learn, and pushes me to re-word points on the fly. Navigate through some of the notes I've taken while solving various code challenges here. 
-
-----
-
-### Table of Contents:
-
-<a href="#arrayMethods">Arrays</a> 
-
-<a href="#controlStatements">Control Statements</a>
-
-<a href="#objectsNotes">Objects</a>
-
-<a href="#stringMethods">Strings</a> 
-
-<div id="arrayMethods"></div>
-
-#### Array Methods: 
-
-📓 Slice vs. Splice: 
-
-![slice vs splice notes](https://i.ibb.co/5LTjqRJ/notes-Slice-Splice.png)
-
-----
-
-<div id="controlStatements"></div>
-
-#### Control Statements: 
-
-📓 For-Of Loop: 
-
-![for-of loop notes](https://i.ibb.co/j8f2xpY/for-Of-Loop-Notes.png)
-
-----
-
-<div id="objectsNotes"></div>
-
-#### Object Methods: 
-
-📓 `Object.assign()`:
-
-![object.assign notes](https://i.ibb.co/jJmtx9T/object-Assign.png)
-
-🧠 Making a `Map` from a `String`: 
-
-![character map notes](https://i.ibb.co/bPQD6Df/character-Map-Notes.png)
-
-----
-
-<div id="stringMethods"></div>
-
-#### String Methods: 
-
-📓 `String.prototype.substr()`: 
-
-![string.prototype.substr notes](https://i.ibb.co/HqXzzzS/substr-Method-Notes.png)
-
-📓 `String.prototype.match()`: 
-
-![string.prototype.match notes](https://i.ibb.co/z5jBTvH/count-Duplicatessecond.png)
-
-----
+# Hacker Rank - [1 Week Interview Prep Course](https://www.hackerrank.com/interview/preparation-kits/one-week-preparation-kit/one-week-day-one/challenges)
