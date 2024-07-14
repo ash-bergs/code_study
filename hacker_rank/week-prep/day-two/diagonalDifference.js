@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * Details:
+ * Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+
+ */
+
 const fs = require('fs');
 
 process.stdin.resume();
@@ -29,6 +35,7 @@ function readLine() {
  * The function accepts 2D_INTEGER_ARRAY arr as parameter.
  */
 
+/* ----------------------------- FIRST SOLUTION ----------------------------- */
 function diagonalDifference(arr) {
   const rows = arr.length;
   let rightToLeftSum = 0;
@@ -51,10 +58,13 @@ function diagonalDifference(arr) {
   const difference = Math.abs(leftToRightSum - rightToLeftSum);
   return difference;
 }
+/* --------------------------- END FIRST SOLUTION --------------------------- */
 
+/* ---------------------------- SECOND SOLUTIONS ---------------------------- */
 // This solution will also be O(n) - but use a map and reduce
 // even though we use 2 maps we increase the slope of the line, but it is still a line
 // because it's linear 0(n) + 0(n) = 0(2n) and reduces to 0(n)
+// And given the nature of the problem, this is the optimal time complexity we can achieve
 function diagonalDifferenceMapReduce(arr) {
   const rows = arr.length;
 
@@ -71,6 +81,7 @@ function diagonalDifferenceMapReduce(arr) {
 
   return Math.abs(leftToRightSum - rightToLeftSum);
 }
+/* --------------------------- END SECOND SOLUTION -------------------------- */
 
 function main() {
   const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
