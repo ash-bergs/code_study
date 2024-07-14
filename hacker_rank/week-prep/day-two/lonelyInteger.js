@@ -51,7 +51,7 @@ function lonelyinteger(a) {
 /* ---------------------------- END FIRST ATTEMPT --------------------------- */
 
 /* ----------------------------- SECOND ATTEMPT ----------------------------- */
-
+// 0(1) - because we'll always have to look at all the items in the array
 function lonelyinteger(a) {
   // Make a hash map
   const counts = {};
