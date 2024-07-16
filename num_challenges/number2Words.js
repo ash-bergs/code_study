@@ -40,43 +40,54 @@ const convertTens = (n) => {
     // if less then twenty, return the string value from ones
     return ones[n];
   } else {
-    let ten = Math.floor(n / 10);
+    const ten = Math.floor(n / 10);
     // returns the remainder after division of one number by another
     // i.e. 45 % 10 leaves us with 5
-    let remainder = n % 10;
-    return tens[ten] + (remainder ? '-' + ones[remainder] : '');
+    const remainder = n % 10;
+    // get the string value of the remainder based on the ones array
+    const remainderString = remainder ? '-' + ones[remainder] : '';
+    const tensString = tens[ten] + remainderString;
+    return tensString;
   }
 };
 
 const convertHundreds = (n) => {
-  let hundred = Math.floor(n / 100);
-  let remainder = n % 100;
+  const hundred = Math.floor(n / 100);
+  const remainder = n % 100;
 
-  const num = hundred
-    ? ones[hundred] +
-      ' ' +
-      'hundred' +
-      (remainder ? ' ' + convertTens(remainder) : '')
+  const remainderString = remainder ? ' ' + convertTens(remainder) : '';
+  // get the string value of the hundreds based on the ones array and add "hundred" to it
+  const hundredsString = hundred
+    ? ones[hundred] + ' ' + 'hundred' + remainderString
     : '';
-  console.log(num);
-  return num;
+
+  return hundredsString;
 };
 
 const convertThousands = (n) => {
-  let thousand = Math.floor(n / 1000);
-  let remainder = n % 1000;
-  return (
-    (thousand
-      ? (thousand < 100 ? convertTens(thousand) : convertHundreds(thousand)) +
-        ' thousand' +
-        (remainder ? ' ' : '')
-      : '') +
-    (remainder
-      ? remainder < 100
-        ? convertTens(remainder)
-        : convertHundreds(remainder)
-      : '')
-  );
+  const thousand = Math.floor(n / 1000);
+  const remainder = n % 1000;
+
+  if (!thousand) return undefined;
+
+  // get the string value of the thousands based on the ones or the tens (one thousand, fifteen thousand, etc) array and add "thousand" to it
+  const thousandsString =
+    (thousand < 100 ? convertTens(thousand) : convertHundreds(thousand)) +
+    ' ' +
+    'thousand';
+
+  if (!remainder) return thousandsString;
+
+  // get the string value of the remainder based on the tens or hundreds array (or ones, depending on the value) and add it to the thousands string
+  const remainderString = remainder
+    ? remainder < 100
+      ? // less than one hundred and we need to convert to tens
+        ' ' + convertTens(remainder)
+      : // greater than one hundred and we need to convert to hundreds
+        ' ' + convertHundreds(remainder)
+    : '';
+
+  return thousandsString + remainderString;
 };
 
 function number2words(n) {
