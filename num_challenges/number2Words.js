@@ -1,3 +1,20 @@
+/**
+ * Details: Create a function that transforms any positive number to a string representing the number in words. The function should work for all numbers between 0 and 999999.
+ * 
+    number2words(0)  ==>  "zero"
+    number2words(1)  ==>  "one"
+    number2words(9)  ==>  "nine"
+    number2words(10)  ==>  "ten"
+    number2words(17)  ==>  "seventeen"
+    number2words(20)  ==>  "twenty"
+    number2words(21)  ==>  "twenty-one"
+    number2words(45)  ==>  "forty-five"
+    number2words(80)  ==>  "eighty"
+    number2words(99)  ==>  "ninety-nine"
+    number2words(100)  ==>  "one hundred"
+    number2words(301)  ==>  "three hundred one"
+ */
+
 // data sets
 const ones = [
   'zero',
